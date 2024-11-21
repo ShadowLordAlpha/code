@@ -160,7 +160,7 @@ void Game::UpdateGame()
 		// Our y-difference is small enough
 		diff <= paddleH / 2.0f &&
 		// We are in the correct x-position
-		mBallPos.x <= 25.0f && mBallPos.x >= 20.0f &&
+		mBallPos.x <= 30.0f && mBallPos.x >= 25.0f &&
 		// The ball is moving to the left
 		mBallVel.x < 0.0f)
 	{
