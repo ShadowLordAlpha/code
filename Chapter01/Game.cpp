@@ -172,18 +172,18 @@ void Game::UpdateGame()
 		mIsRunning = false;
 	}
 	// Did the ball collide with the right wall?
-	else if (mBallPos.x >= (1024.0f - thickness) && mBallVel.x > 0.0f)
+	else if (mBallPos.x >= (1024.0f - thickness * 1.5) && mBallVel.x > 0.0f)
 	{
 		mBallVel.x *= -1.0f;
 	}
 	
 	// Did the ball collide with the top wall?
-	if (mBallPos.y <= thickness && mBallVel.y < 0.0f)
+	if (mBallPos.y <= thickness * 1.5 && mBallVel.y < 0.0f)
 	{
 		mBallVel.y *= -1;
 	}
 	// Did the ball collide with the bottom wall?
-	else if (mBallPos.y >= (768 - thickness) &&
+	else if (mBallPos.y >= (768 - thickness * 1.5) &&
 		mBallVel.y > 0.0f)
 	{
 		mBallVel.y *= -1;
